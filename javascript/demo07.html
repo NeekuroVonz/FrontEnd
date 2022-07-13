@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // const ar1 = [];// [][][]
+        // console.log(ar1);
+        // ar1.push('100');
+        // ar1.push(100);
+        // ar1.push({id: 'ids'});
+        // ar1.push([10, 'email', {email:'email.com'}]);
+        // console.log(ar1.length);
+        // console.log(ar1.pop());// last element
+        // console.log(ar1.length);
+        // // push, pop : dùng để thêm và bỏ dữ liệu
+
+        // const o1 = {
+        //     id : 'james'
+        // }
+        // const o2 = o1;// copy reference
+        // o2.id = 'mario';
+
+        // function createInstance(){// constructor
+        //     return {
+        //         id : 'james'
+        //     }
+        // }                            *recommended
+        // const o3 = createInstance();
+        // const o4 = createInstance();
+        // o3.id = 'mario';
+
+
+        // C++ style
+        function Person(){
+            // think scope
+            // fields
+            this.id = 'kims';
+        }
+        //methods
+        Person.prototype.fn = function(){
+            console.log(this);
+        };
+        // console.log(id);
+
+        const o1 = new Person();
+        // o1.id = '11';
+        console.log(o1.id);
+        const o2 = new Person();
+        // o2.id = '22';
+        console.log(o2.id);
+        o2.fn();
+
+    </script>
+
+
+</body>
+</html>

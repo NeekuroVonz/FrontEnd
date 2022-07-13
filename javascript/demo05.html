@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // 1. have to use keyword
+        // 2. where in ?
+        // 3. let : block, function scope
+        // 4. var : function scope
+        
+        {// block scope
+            var name1 = 'james';
+            let name3 = 'dean';
+        }
+
+
+        function fn() {// function scope
+            name2 = 'james';
+            let name4 = 'dean in function';
+        }
+        fn();
+        console.log(name4);
+        console.log(name3);
+        console.log(name2);
+        console.log(name1);
+
+    </script>
+
+
+</body>
+</html>

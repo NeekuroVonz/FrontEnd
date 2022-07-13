@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #msg {
+            min-height: 24px;
+            border: 1px dashed blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="msg">hom nay with mr mario. learn js</div>
+
+    <p>javascript : Object</p>
+    <p>send & receive : Text</p>
+
+    <script>
+
+        // JSON
+        const jobj = {
+            title : 'js is hell',
+            page : 10,
+            price : 1000.90
+        }
+        const jstr = JSON.stringify(jobj);
+        const jsonObj = JSON.parse(jstr);
+        console.log(jsonObj);
+
+        // javascript's value va jquery's value
+        const msgbox = document.getElementById('msg');
+        msgbox.innerText = 'are you ok ? hieu oi';
+    </script>
+
+</body>
+</html>

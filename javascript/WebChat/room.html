@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROOM-Webchat</title>
+
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+        div, header, section, footer {
+            /* border: 1px dashed grey; */
+            width: 98%;
+        }
+        /* flex */
+        .container-row {
+            display: flex;
+            flex-direction: row;
+        }
+        .container-col {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            height: 100%;
+        }
+        .container-row > .item:nth-child(1) { flex: 10; }
+        .container-row > .item:nth-child(2) { flex: 2; border-left: 2px solid #330033; }
+        .container-col > .item:nth-child(1) { flex: 1; }
+        .container-col > .item:nth-child(2) { flex: 10; }
+        .container-col > .item:nth-child(3) { flex: 1; }
+
+        .item {
+            padding: 8px;
+        }
+
+        footer input {
+            width: 98%;
+            font-size: 12pt;
+            line-height: 24px;
+        }
+        header, footer {
+            background-color: #330033;
+            color: #cdcdcd;
+        }
+        section {
+            background-color: #cccccc;
+        }
+        .msg-text {
+            background-color: rgb(255, 225, 0);
+            margin-bottom: 4px;
+            color: blue;
+            font-size: 16pt;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container-col">
+
+        <header class="item"><h3>LOGO</h3></header>
+        <section class="item container-row">
+            <div class="item" id="chatarea"><h3>Text</h3></div>
+            <div class="item"><h3>Partient?</h3></div>
+        </section>
+        <footer class="item container-row">
+            <div class="item"><input type="text" id="message" name="message"></div>
+            <div class="item">
+                <button id="sendBtn">SEND</button>
+                <button id="menuBtn">MENU</button>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        // initialize when loaded
+        window.addEventListener('load', function(){
+            console.log('duong oi help me ~~~');
+            const chatarea = document.getElementById('chatarea');
+            const messageInput = document.querySelector('#message');
+            const sendBtn = document.querySelector('#sendBtn');
+            const menuBtn = document.querySelector('#menuBtn');
+            const name = 'mario';
+            // add handler /////////////////////////////////////
+            messageInput.addEventListener('keypress', function(e){
+                if( e.keyCode == 13 && this.value.length>0 ){
+                    const msgp = document.createElement('p');
+                    msgp.className = 'msg-text';
+                    // msgp.innerHTML = ''+name+' : '+this.value+'';
+                    msgp.innerHTML = `${name} : ${this.value}`;
+                    chatarea.appendChild(msgp);
+                    this.value = '';
+                }
+            });
+
+        });
+        // handler functions
+        let text = '';
+        function eachKey(e){
+            if (e.keyCode != 13) {
+                text += e.key;
+           } else {
+                // now pressed <enter>
+                console.log(text);
+                text = '';
+           }
+        }
+
+    </script>
+
+</body>
+</html>

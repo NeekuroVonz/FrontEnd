@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        v1 = 10;
+        var v2 = 20;
+        let v3 = 30;
+
+        const v4 = 40;
+
+        {
+
+        }
+
+        todo();
+        function todo(){
+            console.log(' hi ');
+        }
+        
+        // immedietly invoke function(anonymous)
+        (function(){
+            console.log(' anonymous ');
+        })();
+
+        (() => { console.log(' lambda '); })(); 
+
+        ((m) => { console.log(m); })('mong'); 
+
+        ((fn) => { fn(); })(todo); 
+
+        ((fn) => { fn(); })(function(){
+            console.log('call back function');
+        }); 
+
+        ((fn) => { fn()(); })(function(){
+            console.log('call back function');
+            return function(){
+                console.log('be returned function');
+            }
+        }); 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // property : object
+        let v1 = 10;
+        const v2 = 20;
+        v1 = 100;
+        // v2 = 200;
+
+        let o1 = {
+            id : 'jamesdean',
+            email : 'test@test.com',
+            method : function(){
+                console.log( this.id, '-', this.email);
+            }
+        };
+        o1['id'] = 'bulls';
+        o1.id = 'redbull';
+        o1.method();
+
+    </script>
+
+
+</body>
+</html>

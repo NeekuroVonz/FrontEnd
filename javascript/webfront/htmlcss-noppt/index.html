@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5-Oneshot</title>
+</head>
+<body>
+
+    <h1>도움받기</h1>
+    <ul>
+        <li>DevDocs</li>
+        <li>ray.so</li>
+        <li>poet.so
+            <ul>
+                <li>roadmap.sh</li>
+                <li>LambdaTest</li>
+                <li>daily.dev</li>
+                <li>showwcase</li>
+                <li>css-tricks</li>
+            </ul>
+        </li>
+        <li>smartmockups</li>
+        <li>code beautify</li>
+        <li>overAPI</li>
+        <li>responsively</li>
+        <li>color hunt</li>
+        <li>carbon</li>
+        <li>meta tags</li>
+        <li>profile pic maker</li>
+        <li>small dev tools</li>
+        <li>resume.io</li>
+        <li>codepen</li>
+        <li>storytale</li>
+        <li>readme.so</li>
+        <li>peppertype</li>
+        <li>synthesia</li>
+        <li>programmer humor</li>
+
+    </ul>
+<hr>
+    <h1> 영역 나누기 </h1>
+    <div>   기본 영역 요소  div </div>
+    <header>    상단 주요 기능 목록 header  </header>
+    <section>   화면에 보여줄 내용물의 영역 section </section>
+    <footer>    하단 서비스명, 기업명, 주요 연결 footer </footer>
+<hr>
+    <h1>글</h1>
+    <h2>글자 큼 - h1 > h2 > h3 > h4 > h5 > h6 - 글자 작음</h2>
+    <p> 의미상 이어지는 글을 하나의 단락(집합)으로 모음 </p>
+    <span>단어</span><span>또는</span><span>짧은 단문 표현</span>
+    <p> 문맥 상 이어지는 글을 표현하는 &lt;p&gt; 안에 
+        <p>제주에서 점차 다른 지방으로 보급됐지만 현재 제주에만 건축물이 남아있는데, <br>
+        국내 근현대 건축사의 한 페이지를 보여주는 가치를 지닌다고 전문가들은 평가합니다.</p>
+        &lt;p&gt; tag 를 넣으면 "구조"가 깨짐
+    </p>
+    <blockquote>
+        p tag 와 비슷한 성질을 가짐
+        약간의 들여쓰기로 "인용"이라고 부름
+    </blockquote>
+   
+<hr>
+    <h3> html , javascript code 를 보여주기 위한 영역 표시 </h3>
+    <code><pre>
+        <p> html code 는 결과물로 보임 </p>
+        function savetheLocal(){
+            var second = document.getElementById("second");
+            var thevalue = second.value;
+            localStorage.setItem(1, thevalue);
+            gettheLocal();
+        }    
+    </pre></code>
+
+<hr>
+    <h1> 영상, 이미지 등의 미디어 </h1>
+    <img src="images/watch.jpg">
+    <video src="media/Beach.mp4" autoplay controls></video>
+
+    <div>
+        <figure>Figure. apple</figure><!-- 이미지 위 -->
+        <img src="images/apple-bg.jpg" alt="대체텍스트">        
+    </div>
+    <div>
+        <img src="images/apple-bg.jpg" alt="대체텍스트">
+        <figcaption>Figcaption. 이미지 설명글. figure 와 여백, 크기 등이 다름</figcaption><!-- 이미지 아래 -->
+    </div>
+    
+<hr>
+    <h1> 목록 보여주기 </h1>
+    <ul>
+        <li>일반 전화 : (국번없이) 1330</li>
+        <li>휴대 전화 : 064-1330</li>
+    </ul>
+
+	<h1>1박 2일 가족 여행 코스</h1>
+	<ul>
+		<li>1일차
+			<ol type="a">
+				<li>해녀박물관</li>
+				<li>낚시체험</li>
+			</ol>
+		</li>
+		<li>2일차
+			<ol type="a" start ="3">
+				<li>용눈이오름</li>
+				<li>만장굴</li>
+				<li>카약체험</li>
+			</ol start>
+		</li>
+	</ul>
+
+	<h1>제주 올레 </h1>
+	<dl>
+		<dt>올레 1코스</dt>
+		<dd>코스 : 시흥 초등학교 옆 - 광치기 해변</dd>
+		<dd>거리 : 14.6km(4~5시간)</dd>
+		<dd>난이도 : 중</dd>
+		<dt>올레 2코스</dt>
+		<dd>코스 : 광치기 해변 - 온평 포구</dd>
+		<dd>거리 : 14.5km(4~5시간)</dd>
+		<dd>난이도 : 중</dd>
+	</dl>
+
+    <ul>
+        <li>
+            <label>점유율 0.8 </label>
+            <!-- 전체 크기 1을 기준으로 0.8만큼 차지합니다 -->
+          <meter value="0.8"></meter>
+        </li>
+        <li>
+            <label>사용량 64%</label>
+          <!-- 전체 100 중에서 64만큼 차지합니다  -->
+          <meter min="0" max="100" value="64"></meter>
+        </li>
+        <li>
+            <label>트래픽 초과</label>
+          <!-- 전체 크기는 1024~10240까지인데 높다고 설정한 8192보다 현재 값 9216이 더 큽니다 -->
+            <meter min="1024" max="10240" low="2048" high="8192" value="9216"></meter>        
+        </li>
+        <li>
+            <label>적절한 트래픽</label>
+          <!-- 전체 1 중에서 현재 0.5를 차지하고 있으며 적정도를 0.8로 설정했습니다 -->
+          <meter value="0.5" optimum="0.8"></meter>
+        </li>
+      </ul>
+  
+<hr>
+      <h1>표(table) 구조</h1>
+
+    <table>
+        <tr>
+            <th> 제목 셀 </th>
+            <td> 1행 2열 </td>
+            <td> 1행 3열 </td>
+        </tr>
+        <tr>
+            <th> 제목 셀 </th>
+            <td> 2행 2열 </td>
+            <td> 2행 3열 </td>
+        </tr>
+    </table>
+
+
+    <table>
+		<colgroup>
+			<col style="width:100px;">
+			<col style="width:300px;">
+			<col style="width:100px;">
+			<col style="width:300px;">
+		</colgroup>
+		<tr>
+			<th>이름</th>
+			<td></td>
+			<th>연락처</th>
+			<td></td>
+		</tr>
+		<tr>
+			<th>주소</th>
+			<td colspan="3"></td>
+		</tr>		
+		<tr>
+			<th>자기소개</th>
+			<td colspan="3"></td>
+		</tr>
+	</table>
+
+	<table>
+		<caption>
+			<strong>Modern Browser</strong>
+			<p>국내에서 자주 사용하는 모던 브라우저</p>
+		</caption>
+		<tr>
+			<th>브라우저</th>
+			<th>제조업체</th>
+			<th>다운로드</th>
+		</tr>
+		<tr>
+			<th>크롬(Chrome)</th>
+			<td>Google</td>
+			<td>https://www.google.com/chrome/ </td>
+		</tr>
+		<tr>
+			<th>파이어폭스(Firfox)</th>
+			<td>Mozilla</td>
+			<td>https://www.mozilla.org/ko/firefox/</td>
+		</tr>
+		<tr>
+			<th> 엣지(Edge) </th>
+			<td> Microsoft </td>
+			<td>https://www.microsoft.com/ko-kr/windows/microsoft-edge</td>
+		</tr>
+	</table>
+
+    <figure>
+		<figcaption>
+			<p>국내에서 자주 사용하는 <b>모던 브라우저</b></p>
+		</figcaption>
+		<table>
+			<tr>
+				<th>브라우저</th>
+				<th>제조업체</th>
+				<th>다운로드</th>
+			</tr>
+			<tr>
+				<th>크롬(Chrome)</th>
+				<td>Google</td>
+				<td>https://www.google.com/chrome/ </td>
+			</tr>
+			<tr>
+				<th>파이어폭스(Firfox)</th>
+				<td>Mozilla</td>
+				<td>https://www.mozilla.org/ko/firefox/</td>
+			</tr>
+			<tr>
+				<th> 엣지(Edge) </th>
+				<td> Microsoft </td>
+				<td>https://www.microsoft.com/ko-kr/windows/microsoft-edge</td>
+			</tr>
+		</table>
+	</figure>
+
+    <p id="summary">다음 표는 HTMl5를 지원하는 모던(Modern Browser)를 정리한 것입니다. 최신 버전일수록 HTML5를 좀더 많이 지원하기 때문에 최신 버전을 다운로드하는 것이 좋습니다. </p>
+	<table aria-describedby="summary">
+		<caption>Modern Browser</caption>
+		<tr>
+			<th>브라우저</th>
+			<th>제조업체</th>
+			<th>다운로드</th>
+		</tr>
+		<tr>
+			<th>크롬(Chrome)</th>
+			<td>Google</td>
+			<td>https://www.google.com/chrome/ </td>
+		</tr>
+		<tr>
+			<th>파이어폭스(Firfox)</th>
+			<td>Mozilla</td>
+			<td>https://www.mozilla.org/ko/firefox/</td>
+		</tr>
+		<tr>
+			<th> 엣지(Edge) </th>
+			<td> Microsoft </td>
+			<td>https://www.microsoft.com/ko-kr/windows/microsoft-edge</td>
+		</tr>
+	</table>
+
+    <table>
+		<caption>제주특별자치도 학교현황(2015.4.1 기준)</caption>
+		<thead>
+			<tr>
+				<th id="1" class="a">구분</th>
+				<th id="2">학교수</th>
+				<th>학급수</th>
+				<th>학생수</th>
+				<th>교원수</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>초등학교</th>
+				<td>111</td>
+				<td>1,720</td>
+				<td>37,686</td>
+				<td>2,632</td>
+			</tr>
+			<tr>
+				<th>중학교</th>
+				<td>44</td>
+				<td>699</td>
+				<td>21,274</td>
+				<td>1,412</td>
+			</tr>
+			<tr>
+				<th>고등학교</th>
+				<td>29</td>
+				<td>676</td>
+				<td>22,019</td>
+				<td>1,433</td>
+			</tr>
+			<tr>
+				<th>대학교</th>
+				<td>3</td>
+				<td>90</td>
+				<td>428</td>
+				<td>160</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th>합계</th>
+				<td>300</td>
+				<td>3,437</td>
+				<td>86,954</td>
+				<td>6,111</td>
+			</tr>
+		</tfoot>
+	</table>
+
+<hr>
+    <h1>앵커 만들기</h1>
+    <p>웹 문서가 너무 길 경우 필요한 곳마다 문서 안에 이름을 붙여놓고 그 위치로 한번에 이동하는 링크를 만들 수 있는데, 이 기능을 앵커(anchor)라고 합니다. </p>
+    <ul id="menu">
+        <li><a href="#content1">메뉴1</a></li>
+        <li><a href="#content2">메뉴2</a></li>
+        <li><a href="#content3">메뉴3</a></li>
+    </ul>
+    <h2 id="content1">내용1</h2>
+    <p>웹 문서가 너무 길 경우 필요한 곳마다 문서 안에 이름을 붙여놓고 그 위치로 한번에 이동하는 링크를 만들 수 있는데, 이 기능을 앵커(anchor)라고 합니다. </p>
+    <p>웹 문서가 너무 길 경우 필요한 곳마다 문서 안에 이름을 붙여놓고 그 위치로 한번에 이동하는 링크를 만들 수 있는데, 이 기능을 앵커(anchor)라고 합니다. </p>
+    <p>웹 문서가 너무 길 경우 필요한 곳마다 문서 안에 이름을 붙여놓고 그 위치로 한번에 이동하는 링크를 만들 수 있는데, 이 기능을 앵커(anchor)라고 합니다. </p>
+    <p><a href="#menu">[메뉴로]</a></p>
+    <h2 id="content2">내용2</h2>
+    <p>웹 문서가 너무 길 경우 필요한 곳마다 문서 안에 이름을 붙여놓고 그 위치로 한번에 이동하는 링크를 만들 수 있는데, 이 기능을 앵커(anchor)라고 합니다. </p>
+    <p>웹 문서가 너무 길 경우 필요한 곳마다 문서 안에 이름을 붙여놓고 그 위치로 한번에 이동하는 링크를 만들 수 있는데, 이 기능을 앵커(anchor)라고 합니다. </p>
+    <p>웹 문서가 너무 길 경우 필요한 곳마다 문서 안에 이름을 붙여놓고 그 위치로 한번에 이동하는 링크를 만들 수 있는데, 이 기능을 앵커(anchor)라고 합니다. </p>
+    <p><a href="#menu">[메뉴로]</a></p>
+    <h2 id="content3">내용3</h2>
+    <p>웹 문서가 너무 길 경우 필요한 곳마다 문서 안에 이름을 붙여놓고 그 위치로 한번에 이동하는 링크를 만들 수 있는데, 이 기능을 앵커(anchor)라고 합니다. </p>
+    <p>웹 문서가 너무 길 경우 필요한 곳마다 문서 안에 이름을 붙여놓고 그 위치로 한번에 이동하는 링크를 만들 수 있는데, 이 기능을 앵커(anchor)라고 합니다. </p>
+    <p>웹 문서가 너무 길 경우 필요한 곳마다 문서 안에 이름을 붙여놓고 그 위치로 한번에 이동하는 링크를 만들 수 있는데, 이 기능을 앵커(anchor)라고 합니다. </p>
+    <p><a href="#menu">[메뉴로]</a></p>
+
+    <h1>텍스트 링크 만들기</h1>
+	<p><a href="http://www.easyspub.com">이지스퍼블리싱 홈페이지(현재 화면)</a></p>
+	<p><a href="http://www.easyspub.com" target="_blank">이지스퍼블리싱 홈페이지(새 창 또는 새 탭)</a></p>
+
+<hr>
+    <h1>이미지에 앵커 걸기 ( map )</h1>
+
+    <img src="images/easyspub.jpg" alt="책 소개 페이지" usemap="#eventMap">
+    <map name="eventMap">
+    <area shape="circle" coords="230,295,40" href="http://www.easyspub.co.kr/20_Menu/BookView/A001/113#tab07" alt="동영상 강의 페이지로 가기" target="_blank">
+    <area shape="rect" coords="475,1524,704,1653" href="http://cafe.naver.com/doitstudyroom" alt="스터디룸 카페로 가기" target="_blank">
+    <area shape="rect" coords="475,1747,703,1882" href="http://tech-town.org" alt="저자 사이트로 가기" target="_blank">
+    </map>
+
+<hr>
+
+    <h1>사용자의 입력을 받는 form </h1>
+	<form action="register" method="get">
+		<label>아이디 <input type="text" size="15"></label>
+		<label>비밀번호 <input type="password" size="15"></label>
+		<label> 메일 주소 <input type="text"></label>
+
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul>
+                <li>
+                    <label for="user-name">이름 </label>
+                    <input type="text" id="user-name">
+                </li>
+                <li>
+                    <label for="mail">메일 주소</label>
+                    <input type="email" id="mail">
+                </li>
+                <li>
+                    <label for="phone">연락처</label>
+                    <input type="tel" id="phone">
+                </li>
+                <li>
+                    <label for="homep">블로그/홈페이지</label>
+                    <input type="url" id="homep">
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>개인별 상세</legend>
+            <ul>
+                <li>
+                    <label for="name">이름</label>
+                    <input type="text" id="name">
+                </li>
+                <li>
+                    <label for="mail">집주소</label>
+                    <input type="text" id="address">
+                </li>
+            </ul>
+        </fieldset>		
+
+        <fieldset>
+			<legend>과 티셔츠 설문</legend>
+			<p>올해 과 티(T)를 만들려고 합니다. 원하는 색상을 추천해 주세요.</p>
+			<label>선호색상  <input type="color" value="#00ff00"> </label>
+		</fieldset>
+
+        <fieldset>
+            <legend>수강 신청인</legend>
+            <ul>
+                <li>
+                    <label class="reg" for="id">학번</label>
+                    <input type="text" id="id" autofocus> 
+                </li>
+                <li>       	
+                    <label class="reg" for="name">이름</label>
+                    <input type="text" id="name">               
+              </li>
+                <li>
+                    <label class="reg" for="class">학과</label>
+                    <select id="class1">
+                        <option value="archi">건축공학과</option>
+                        <option value="mechanic">기계공학과</option>
+                        <option value="indust">산업공학과</option>
+                        <option value="디베">
+                            <select id="class2">
+                                <option value="archi">건축공학과</option>
+                                <option value="mechanic">기계공학과</option>
+                                <option value="indust">산업공학과</option>
+                                <option value="elec">전기전자공학과</option>
+                                <option value="computer" selected>컴퓨터공학과</option>
+                                <option value="chemical">화학공학과</option>
+                            </select>        
+                        </option>
+                        <option value="elec">전기전자공학과</option>
+                        <option value="computer" selected>컴퓨터공학과</option>
+                        <option value="chemical">화학공학과</option>
+                    </select>
+              </li>
+             </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>수강 과목을 선택하세요</legend>
+                <ul>
+                    <li>
+                        <span class="reg">관심분야</span>
+                        <label for="interest"></label>
+                        <input type="text" id="interest" list="choices">
+                        <datalist id="choices">
+                            <option value="grammar" label="문법"></option>
+                            <option value="voca" label="어휘"></option>
+                            <option value="speaking" label="회화"></option>
+                            <option value="listening" label="리스닝"></option>
+                            <option value="news" label="뉴스청취"></option>
+                        </datalist>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <label><input type="date" id="start"></label>
+            <label><input type="date" id="end"></label>
+
+            <fieldset>
+                <legend> 수량 정보</legend>
+                  <ul>
+                    <li>
+                           <label class="reg" for="member">참여인원<small>(최대10명)</small></label>
+                        <input type="number" id="member" value="1" min="0" max="10" step="1">
+                      </li>
+                      <li>
+                           <label class="reg" for="stuffs">지원물품<small>(1인당 5개)</small></label>
+                        <input type="number" id="stuffs" value="1" min="0" max="50" step="5" size="5">
+                      </li>
+                      <li>
+                           <label class="reg" for="satis">희망 단계<small>(하,중,상)</small></label>
+                        <input type="range" id="satis" value="1" min="1" max="3">
+                      </li>           
+                    </ul>
+               </fieldset>
+
+               <fieldset>
+                <legend>신청 과목</legend>
+                <p>이 달에 신청할 과목을 선택하세요 (1과목만 가능)</p>
+                <label><input type="radio" name="subject" value="speaking">회화</label>
+                <label><input type="radio" name="subject" value="grammar">문법</label>
+                <label><input type="radio" name="subject" value="writing">작문</label>       
+            </fieldset>
+            <fieldset>
+                <legend>메일링</legend>
+                <p>메일로 받고 싶은 뉴스 주제를 선택해 주세요 (복수 선택 가능)</p>
+                <label><input type="checkbox" name="mailing1" value="news">해외 단신</label>
+                <label><input type="checkbox" name="mailing2" value="dialog">5분 회화</label>
+                <label><input type="checkbox" name="mailing3" value="pops">모닝팝스</label>
+            </fieldset>
+
+            <fieldset class="easys">
+                <legend>긴 내용의 입력</legend>
+                <textarea name="intro" cols="60" rows="5">
+                    작사도 하고 코딩도 하고 
+                    이것 저것
+                    길고 상세한 내용을 작성
+                </textarea>
+            </fieldset>
+
+            <h3>대관시간을 선택하세요(오늘)</h3>
+            <label>시작 시간<input type="time" value="09:00" id="start"></label>,
+            <label>종료 시간<input type="time" value="18:00" id="end"></label>
+        
+            <h3>대관시간을 선택하세요(다른날짜)</h3>
+            <label>시작 시간<input type="datetime-local" value="2016-03-02T09:00" id="start"></label>,
+            <label>종료 시간<input type="datetime-local" value="2016-03-02T18:00" id="end"></label>
+
+            <input type="submit" value="제출">
+        <button type="submit" class="subm">
+            <img src="images/tick.png" alt=""> 전송하기
+        </button>
+		<input type="reset" value="다시입력">
+    </form>
+
+  
+<hr>
+    <progress id="bar" value="30" max="100">
+        <span id="progress"> </span>
+    </progress>    
+
+<hr>
+
+
+</body>
+</html>

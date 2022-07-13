@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div></div>
+    <div class="c3"></div>
+    <div class="c3"></div>
+    <div id="d4"></div>
+
+    <script>
+        const divel = document.getElementsByTagName('div');
+        console.log(divel);
+        console.log(divel.length);
+        
+        const d4 = document.getElementById('d4');
+        console.log(d4); // unique ID
+
+        const c3 = document.getElementsByClassName('c3');
+        console.log(c3);
+        console.log(c3.length);
+
+        const el1 = document.querySelectorAll('div');
+        const el2 = document.querySelectorAll('#d4');
+        const el3 = document.querySelectorAll('.c3');
+        const el4 = document.querySelectorAll('div#d4');
+        console.log(el1);
+        console.log(el2);
+        console.log(el3);
+        console.log(el4);
+
+    </script>
+
+
+</body>
+</html>
